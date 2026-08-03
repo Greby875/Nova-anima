@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greby - Shop Smarter, Save More & Earn More</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="container topbar-left">
+    <span>🎁 Welcome to Greby – Shop Smarter, Save More &amp; Earn More</span>
+  </div>
+  <div class="container topbar-right" style="justify-content:flex-end;">
+    <span>🚚 Free Delivery for orders above ₦20,000</span>
+    <span>🛟 Help Center</span>
+    <span>📦 Track Order</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="main">
+  <div class="container header-row">
+    <div class="logo">
+      <div class="icon">🛍️</div>
+      <div>
+        <h1>GREBY</h1>
+        <p>Shop Smarter. Save More. Earn More.</p>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products, brands and more...">
+      <select>
+        <option>All Categories</option>
+      </select>
+      <button>🔍</button>
+    </div>
+
+    <div class="header-actions">
+      <div class="action-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        <span>Wishlist</span>
+        <span class="badge">0</span>
+      </div>
+      <div class="action-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span>Cart</span>
+        <span class="badge">0</span>
+      </div>
+      <div class="action-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <span>Login / Sign Up</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Nav -->
+<nav class="mainnav">
+  <div class="container nav-row">
+    <div class="categories-btn">☰ All Categories ▾</div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Categories ▾</a>
+      <a href="#">Deals <span class="hot-badge">HOT</span></a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#" class="whatsapp-link">📞 WhatsApp Support</a>
+    </div>
+    <div class="dark-toggle">
+      🌙 Dark Mode
+      <div class="switch" id="darkSwitch"></div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="hero">
+      <div class="hero-content">
+        <span class="hero-tag">BEST DEALS ONLINE</span>
+        <h2>Welcome to <span>Greby</span></h2>
+        <p>Your one-stop online destination for top quality products from trusted sellers. Shop smarter and earn more with us.</p>
+        <div class="hero-btns">
+          <button class="btn btn-primary">🛍️ Shop Now</button>
+          <button class="btn btn-outline">🏷️ Explore Deals</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&auto=format&fit=crop&q=60" alt="Products">
+      </div>
+      <div class="hero-dots">
+        <span class="active"></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature strip -->
+  <section class="features">
+    <div class="feature-card"><div class="fi">🛡️</div><div><h4>Trusted Sellers</h4><p>100% trusted sellers</p></div></div>
+    <div class="feature-card"><div class="fi">🔒</div><div><h4>Secure Shopping</h4><p>Safe &amp; secure payments</p></div></div>
+    <div class="feature-card"><div class="fi">🏷️</div><div><h4>Best Price Guarantee</h4><p>Get the best deals</p></div></div>
+    <div class="feature-card"><div class="fi">📈</div><div><h4>Earn Commission</h4><p>Earn more with Greby</p></div></div>
+    <div class="feature-card"><div class="fi">🎧</div><div><h4>24/7 Support</h4><p>We're here to help</p></div></div>
+  </section>
+
+  <!-- Trending products -->
+  <section class="section">
+    <div class="section-head">
+      <h3>🔥 Trending Products</h3>
+      <button class="view-all">View All</button>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="section-head">
+      <h3>Shop by Categories</h3>
+      <button class="view-all">View All Categories</button>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </section>
+
+  <!-- Bottom info -->
+  <section class="info-row">
+    <div class="info-card newsletter">
+      <h4><span class="ii">✉️</span> Join Our Newsletter</h4>
+      <p class="sub">Get updates on deals and offers</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <div class="info-card payment">
+      <h4><span class="ii">💳</span> Payment Information</h4>
+      <table>
+        <tr><td>Bank</td><td>: Moniepoint</td></tr>
+        <tr><td>Account Name</td><td>: Hart Great Tamunosa</td></tr>
+        <tr><td>Account Number</td><td>: 7025190705</td></tr>
+      </table>
+    </div>
+
+    <div class="info-card why">
+      <h4><span class="ii">🛡️</span> Why Shop With Greby?</h4>
+      <ul class="why-list">
+        <li>Wide range of quality products</li>
+        <li>Secure &amp; safe transactions</li>
+        <li>Best prices from trusted sellers</li>
+        <li>Fast delivery &amp; track order</li>
+        <li>Earn commission on every purchase</li>
+        <li>24/7 customer support</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!-- WhatsApp float -->
+<div class="wa-float">
+  <div class="wa-chip">Chat with us</div>
+  <div class="wa-btn">💬</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
