@@ -12,7 +12,12 @@
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
     font-family:'Segoe UI',Arial,Helvetica,sans-serif;
-    background:var(--bg);
+
+    background-image: url("images/background.jpg");
+    background-size: cover;       /* Makes the image fill the screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Optional: keeps image fixed when scrolling */
     color:var(--text);
   }
   a{text-decoration:none;color:inherit;}
